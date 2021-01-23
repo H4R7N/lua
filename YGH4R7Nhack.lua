@@ -955,6 +955,27 @@ yarak3.Name = "KillBlock31"
 wait(0.1)
 local yarak3 = game.Workspace.KillBlock
 yarak3.Name = "KillBlock32"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock33"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock34"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock35"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock36"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock37"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock38"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock39"
 end)
 
 Local.Name = "Local"
@@ -981,7 +1002,7 @@ Flight.MouseButton1Down:Connect(function()
 local a = game.Workspace.KillBlock11
 a.Size = Vector3.new(2.88, 0.397108, 2.18648)
 wait(0.1)
-local a = game.Workspace.KillBlock21
+local a = game.Workspace.KillBlock22
 a.Size = Vector3.new(2.88, 0.397108, 2.18648)
 wait(0.1)
 local a = game.Workspace.KillBlock13
@@ -1033,7 +1054,37 @@ local a = game.Workspace.Part48
 a.Size = Vector3.new(7, 1, 13)
 wait(0.1)
 local a = game.Workspace.Part47
-a.Size = Vector3.new(5, 1.2, 11.2)
+a.Size = Vector3.new(5, 1.2, 13.2)
+wait(0.1)
+local a = game.Workspace.Part138
+a.Size = Vector3.new(7, 1, 13)
+wait(0.1)
+local a = game.Workspace.Part139
+a.Size = Vector3.new(5, 1.2, 13.2)
+wait(0.1)
+local a = game.Workspace.Part141
+a.Size = Vector3.new(7, 1, 13)
+wait(0.1)
+local a = game.Workspace.Part140
+a.Size = Vector3.new(5, 1.2, 13.2)
+wait(0.1)
+local a = game.Workspace.Part142
+a.Size = Vector3.new(7, 1, 13)
+wait(0.1)
+local a = game.Workspace.Part143
+a.Size = Vector3.new(5, 1.2, 13.2)
+wait(0.1)
+local a = game.Workspace.Part145
+a.Size = Vector3.new(7, 1, 13)
+wait(0.1)
+local a = game.Workspace.Part144
+a.Size = Vector3.new(5, 1.2, 13.2)
+wait(0.1)
+local a = game.Workspace.Part147
+a.Size = Vector3.new(7, 1, 13)
+wait(0.1)
+local a = game.Workspace.Part146
+a.Size = Vector3.new(5, 1.2, 13.2)
 wait(0.1)
 local a = game.Workspace.Part61
 a.Size = Vector3.new(7.56581, 2.2, 14.2723)
@@ -1080,7 +1131,7 @@ wait(0.1)
 local a = game.Workspace.Part117
 a.Size = Vector3.new(8.1029, 0.568867, 0.831195)
 wait(0.1)
-local a = game.Workspace.KillBlock27
+local a = game.Workspace.KillBlock29
 a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
 wait(0.1)
 local a = game.Workspace.KillBlock6
@@ -1095,6 +1146,12 @@ wait(0.1)
 local a = game.Workspace.Part35
 a.Size = Vector3.new(1.5, 1.2, 4.02785)
 wait(0.1)
+local a = game.Workspace.Part92
+a.Size = Vector3.new(1.49825, 0.118196, 1.86408)
+wait(0.1)
+local a = game.Workspace.Part91
+a.Size = Vector3.new(1.49825, 0.118196, 1.86408)
+wait(0.1)
 local a = game.Workspace.Part72
 a.Size = Vector3.new(1.49825, 0.118196, 1.86408)
 wait(0.1)
@@ -1104,7 +1161,10 @@ wait(0.1)
 local a = game.Workspace.Part74
 a.Size = Vector3.new(1.49825, 0.118196, 1.86408)
 wait(0.1)
-local a = game.Workspace.KillBlock23
+local a = game.Workspace.KillBlock24
+a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
+wait(0.1)
+local a = game.Workspace.KillBlock21
 a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
 wait(0.1)
 local a = game.Workspace.KillBlock20
@@ -1116,16 +1176,13 @@ wait(0.1)
 local a = game.Workspace.KillBlock18
 a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
 wait(0.1)
-local a = game.Workspace.KillBlock17
-a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
-wait(0.1)
-local a = game.Workspace.KillBlock24
+local a = game.Workspace.KillBlock25
 a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
 wait(0.1)
 local a = game.Workspace.KillBlock12
 a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
 wait(0.1)
-local a = game.Workspace.KillBlock25
+local a = game.Workspace.KillBlock26
 a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
 wait(0.1)
 local a = game.Workspace.Part78
@@ -1250,7 +1307,7 @@ Title.BorderSizePixel = 0
 Title.Position = UDim2.new(0.0185185075, 0, 0.02892562, 0)
 Title.Size = UDim2.new(0, 116, 0, 39)
 Title.Font = Enum.Font.SourceSansLight
-Title.Text = "Yikik Gamer H4R7N Legit Hack (22.01.2021)"
+Title.Text = "Yikik Gamer H4R7N Legit Hack (23.01.2021)"
 Title.TextColor3 = Color3.fromRGB(0, 0, 0)
 Title.TextScaled = true
 Title.TextSize = 14.000
