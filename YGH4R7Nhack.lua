@@ -583,6 +583,27 @@ yarak.Name = "Part156"
 wait(0.1)
 local yarak = game.Workspace.Part
 yarak.Name = "Part157"
+wait(0.1)
+local yarak = game.Workspace.Part
+yarak.Name = "Part158"
+wait(0.1)
+local yarak = game.Workspace.Part
+yarak.Name = "Part159"
+wait(0.1)
+local yarak = game.Workspace.Part
+yarak.Name = "Part160"
+wait(0.1)
+local yarak = game.Workspace.Part
+yarak.Name = "Part161"
+wait(0.1)
+local yarak = game.Workspace.Part
+yarak.Name = "Part162"
+wait(0.1)
+local yarak = game.Workspace.Part
+yarak.Name = "Part163"
+wait(0.1)
+local yarak = game.Workspace.Part
+yarak.Name = "Part164"
 end)
 
 Kapa.Name = "Kapa"
@@ -843,6 +864,21 @@ yarak2.Name = "Truss18"
 wait(0.1)
 local yarak2 = game.Workspace.Truss
 yarak2.Name = "Truss19"
+wait(0.1)
+local yarak2 = game.Workspace.Truss
+yarak2.Name = "Truss20"
+wait(0.1)
+local yarak2 = game.Workspace.Truss
+yarak2.Name = "Truss21"
+wait(0.1)
+local yarak2 = game.Workspace.Truss
+yarak2.Name = "Truss22"
+wait(0.1)
+local yarak2 = game.Workspace.Truss
+yarak2.Name = "Truss23"
+wait(0.1)
+local yarak2 = game.Workspace.Truss
+yarak2.Name = "Truss24"
 end)
 
 D.Name = "D"
@@ -976,6 +1012,45 @@ yarak3.Name = "KillBlock38"
 wait(0.1)
 local yarak3 = game.Workspace.KillBlock
 yarak3.Name = "KillBlock39"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock40"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock41"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock42"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock43"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock44"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock45"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock46"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock47"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock48"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock49"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock50"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock51"
+wait(0.1)
+local yarak3 = game.Workspace.KillBlock
+yarak3.Name = "KillBlock52"
 end)
 
 Local.Name = "Local"
@@ -999,196 +1074,196 @@ Flight.TextScaled = true
 Flight.TextSize = 14.000
 Flight.TextWrapped = true
 Flight.MouseButton1Down:Connect(function()
-local a = game.Workspace.KillBlock11
-a.Size = Vector3.new(2.88, 0.397108, 2.18648)
+local a = game.Workspace.KillBlock51
+a.Size = Vector3.new(1.47286, 0.397108, 7.47)
 wait(0.1)
-local a = game.Workspace.KillBlock22
-a.Size = Vector3.new(2.88, 0.397108, 2.18648)
+local a = game.Workspace.KillBlock14
+a.Size = Vector3.new(1.47286, 0.397108, 7.47)
+wait(0.1)
+local a = game.Workspace.Part47
+a.Size = Vector3.new(56.3542, 0.39, 1.95)
 wait(0.1)
 local a = game.Workspace.KillBlock13
+a.Size = Vector3.new(2.88, 0.397108, 2.18648)
+wait(0.1)
+local a = game.Workspace.KillBlock26
+a.Size = Vector3.new(2.88, 0.397108, 2.18648)
+wait(0.1)
+local a = game.Workspace.KillBlock17
 a.Size = Vector3.new(3.88, 0.397108, 2.18648)
 wait(0.1)
-local a = game.Workspace.Part133
+local a = game.Workspace.Part109
 a.Size = Vector3.new(27.7137, 1, 1)
 wait(0.1)
-local a = game.Workspace.Part127
+local a = game.Workspace.Part77
 a.Size = Vector3.new(27.7137, 1, 1)
 wait(0.1)
-local a = game.Workspace.Part128
+local a = game.Workspace.Part103
 a.Size = Vector3.new(27.7137, 1, 1)
 wait(0.1)
-local a = game.Workspace.Part130
+local a = game.Workspace.Part104
 a.Size = Vector3.new(27.7137, 1, 1)
 wait(0.1)
-local a = game.Workspace.Part131
+local a = game.Workspace.Part106
 a.Size = Vector3.new(27.7137, 1, 1)
 wait(0.1)
-local a = game.Workspace.Part135
+local a = game.Workspace.Part107
+a.Size = Vector3.new(27.7137, 1, 1)
+wait(0.1)
+local a = game.Workspace.Part111
 a.Size = Vector3.new(35.92, 0.39, 30.8276)
 wait(0.1)
-local a = game.Workspace.Part18
+local a = game.Workspace.Part16
 a.Size = Vector3.new(5, 1, 8)
 wait(0.1)
-local a = game.Workspace.Part15
+local a = game.Workspace.Part13
 a.Size = Vector3.new(3, 1.2, 8.2)
 wait(0.1)
-local a = game.Workspace.Part16
+local a = game.Workspace.Part18
 a.CFrame = CFrame.new(-134.718628, 5.47725677, -30.106987, 0, -1, 0, 1, 0, -0, 0, 0, 1)
-a.Position = Vector3.new(-136.719, 5.47726, -23.107)
-a.Size = Vector3.new(11.8, 13, 48)
+a.Position = Vector3.new(-136.719, 5.47726, -16.107)
+a.Size = Vector3.new(11.8, 13, 65)
 a.Transparency = 1
 wait(0.1)
 local a = game.Workspace.Part9
 a.Size = Vector3.new(7, 1, 13)
 wait(0.1)
-local a = game.Workspace.Part54
-a.Size = Vector3.new(5, 1.2, 13.2)
-wait(0.1)
-local a = game.Workspace.Part49
-a.Size = Vector3.new(7, 1, 13)
-wait(0.1)
-local a = game.Workspace.Part50
-a.Size = Vector3.new(5, 1.2, 13.2)
-wait(0.1)
 local a = game.Workspace.Part48
-a.Size = Vector3.new(7, 1, 13)
-wait(0.1)
-local a = game.Workspace.Part47
 a.Size = Vector3.new(5, 1.2, 13.2)
 wait(0.1)
-local a = game.Workspace.Part138
+local a = game.Workspace.Part43
 a.Size = Vector3.new(7, 1, 13)
 wait(0.1)
-local a = game.Workspace.Part139
+local a = game.Workspace.Part44
 a.Size = Vector3.new(5, 1.2, 13.2)
 wait(0.1)
-local a = game.Workspace.Part141
+local a = game.Workspace.Part42
 a.Size = Vector3.new(7, 1, 13)
 wait(0.1)
-local a = game.Workspace.Part140
+local a = game.Workspace.Part41
 a.Size = Vector3.new(5, 1.2, 13.2)
 wait(0.1)
-local a = game.Workspace.Part142
+local a = game.Workspace.Part114
 a.Size = Vector3.new(7, 1, 13)
 wait(0.1)
-local a = game.Workspace.Part143
+local a = game.Workspace.Part115
 a.Size = Vector3.new(5, 1.2, 13.2)
-wait(0.1)
-local a = game.Workspace.Part145
-a.Size = Vector3.new(7, 1, 13)
-wait(0.1)
-local a = game.Workspace.Part144
-a.Size = Vector3.new(5, 1.2, 13.2)
-wait(0.1)
-local a = game.Workspace.Part147
-a.Size = Vector3.new(7, 1, 13)
-wait(0.1)
-local a = game.Workspace.Part146
-a.Size = Vector3.new(5, 1.2, 13.2)
-wait(0.1)
-local a = game.Workspace.Part61
-a.Size = Vector3.new(7.56581, 2.2, 14.2723)
-wait(0.1)
-local a = game.Workspace.Part62
-a.Size = Vector3.new(7.56581, 2.2, 14.2723)
-wait(0.1)
-local a = game.Workspace.Part63
-a.Size = Vector3.new(7.56581, 2.2, 14.2723)
-wait(0.1)
-local a = game.Workspace.Part89
-a.Size = Vector3.new(7.56581, 2.2, 14.2723)
-wait(0.1)
-local a = game.Workspace.Part82
-a.Size = Vector3.new(7.56581, 2.2, 14.2723)
-wait(0.1)
-local a = game.Workspace.Part84
-a.Size = Vector3.new(1.85, 0.204054, 1.73446)
-wait(0.1)
-local a = game.Workspace.Part85
-a.Size = Vector3.new(1.85, 0.204054, 1.73446)
-wait(0.1)
-local a = game.Workspace.Part83
-a.Size = Vector3.new(1.85, 0.204054, 1.73446)
-wait(0.1)
-local a = game.Workspace.Part87
-a.Size = Vector3.new(1.85, 0.204054, 1.73446)
-wait(0.1)
-local a = game.Workspace.Part88
-a.Size = Vector3.new(1.85, 0.204054, 1.73446)
-wait(0.1)
-local a = game.Workspace.Part86
-a.Size = Vector3.new(1.85, 0.204054, 1.73446)
-wait(0.1)
-local a = game.Workspace.Part27
-a.Size = Vector3.new(1.85, 0.204054, 1.73446)
-wait(0.1)
-local a = game.Workspace.Part37
-a.Size = Vector3.new(9.1029, 0.568867, 0.831195)
-wait(0.1)
-local a = game.Workspace.Part95
-a.Size = Vector3.new(8.1029, 0.568867, 0.831195)
 wait(0.1)
 local a = game.Workspace.Part117
+a.Size = Vector3.new(7, 1, 13)
+wait(0.1)
+local a = game.Workspace.Part116
+a.Size = Vector3.new(5, 1.2, 13.2)
+wait(0.1)
+local a = game.Workspace.Part118
+a.Size = Vector3.new(7, 1, 13)
+wait(0.1)
+local a = game.Workspace.Part119
+a.Size = Vector3.new(5, 1.2, 13.2)
+wait(0.1)
+local a = game.Workspace.Part121
+a.Size = Vector3.new(7, 1, 13)
+wait(0.1)
+local a = game.Workspace.Part120
+a.Size = Vector3.new(5, 1.2, 13.2)
+wait(0.1)
+local a = game.Workspace.Part123
+a.Size = Vector3.new(7, 1, 13)
+wait(0.1)
+local a = game.Workspace.Part122
+a.Size = Vector3.new(5, 1.2, 13.2)
+wait(0.1)
+local a = game.Workspace.Part54
+a.Size = Vector3.new(7.56581, 2.2, 14.2723)
+wait(0.1)
+local a = game.Workspace.Part55
+a.Size = Vector3.new(7.56581, 2.2, 14.2723)
+wait(0.1)
+local a = game.Workspace.Part56
+a.Size = Vector3.new(7.56581, 2.2, 14.2723)
+wait(0.1)
+local a = game.Workspace.Part75
+a.Size = Vector3.new(7.56581, 2.2, 14.2723)
+wait(0.1)
+local a = game.Workspace.Part68
+a.Size = Vector3.new(7.56581, 2.2, 14.2723)
+wait(0.1)
+local a = game.Workspace.Part70
+a.Size = Vector3.new(1.85, 0.204054, 1.73446)
+wait(0.1)
+local a = game.Workspace.Part71
+a.Size = Vector3.new(1.85, 0.204054, 1.73446)
+wait(0.1)
+local a = game.Workspace.Part69
+a.Size = Vector3.new(1.85, 0.204054, 1.73446)
+wait(0.1)
+local a = game.Workspace.Part73
+a.Size = Vector3.new(1.85, 0.204054, 1.73446)
+wait(0.1)
+local a = game.Workspace.Part74
+a.Size = Vector3.new(1.85, 0.204054, 1.73446)
+wait(0.1)
+local a = game.Workspace.Part72
+a.Size = Vector3.new(1.85, 0.204054, 1.73446)
+wait(0.1)
+local a = game.Workspace.Part24
+a.Size = Vector3.new(1.85, 0.204054, 1.73446)
+wait(0.1)
+local a = game.Workspace.Part32
+a.Size = Vector3.new(9.1029, 0.568867, 0.831195)
+wait(0.1)
+local a = game.Workspace.Part78
 a.Size = Vector3.new(8.1029, 0.568867, 0.831195)
 wait(0.1)
-local a = game.Workspace.KillBlock29
+local a = game.Workspace.Part93
+a.Size = Vector3.new(8.1029, 0.568867, 0.831195)
+wait(0.1)
+local a = game.Workspace.KillBlock39
 a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
 wait(0.1)
 local a = game.Workspace.KillBlock6
 a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
 wait(0.1)
-local a = game.Workspace.KillBlock9
-a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
-wait(0.1)
-local a = game.Workspace.KillBlock15
-a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
-wait(0.1)
-local a = game.Workspace.Part35
-a.Size = Vector3.new(1.5, 1.2, 4.02785)
-wait(0.1)
-local a = game.Workspace.Part92
-a.Size = Vector3.new(1.49825, 0.118196, 1.86408)
-wait(0.1)
-local a = game.Workspace.Part91
-a.Size = Vector3.new(1.49825, 0.118196, 1.86408)
-wait(0.1)
-local a = game.Workspace.Part72
-a.Size = Vector3.new(1.49825, 0.118196, 1.86408)
-wait(0.1)
-local a = game.Workspace.Part71
-a.Size = Vector3.new(1.49825, 0.118196, 1.86408)
-wait(0.1)
-local a = game.Workspace.Part74
-a.Size = Vector3.new(1.49825, 0.118196, 1.86408)
-wait(0.1)
-local a = game.Workspace.KillBlock24
-a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
-wait(0.1)
-local a = game.Workspace.KillBlock21
-a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
-wait(0.1)
-local a = game.Workspace.KillBlock20
+local a = game.Workspace.KillBlock12
 a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
 wait(0.1)
 local a = game.Workspace.KillBlock19
 a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
 wait(0.1)
-local a = game.Workspace.KillBlock18
+local a = game.Workspace.KillBlock30
 a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
 wait(0.1)
-local a = game.Workspace.KillBlock25
+local a = game.Workspace.KillBlock24
 a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
 wait(0.1)
-local a = game.Workspace.KillBlock12
+local a = game.Workspace.KillBlock23
 a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
 wait(0.1)
-local a = game.Workspace.KillBlock26
+local a = game.Workspace.KillBlock22
 a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
 wait(0.1)
-local a = game.Workspace.Part78
+local a = game.Workspace.KillBlock21
+a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
+wait(0.1)
+local a = game.Workspace.KillBlock31
+a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
+wait(0.1)
+local a = game.Workspace.KillBlock15
+a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
+wait(0.1)
+local a = game.Workspace.KillBlock34
+a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
+wait(0.1)
+local a = game.Workspace.Part11
+a.CFrame = CFrame.new(-71.6324615, 27.5970306, 162.505417, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+a.Position = Vector3.new(-75.6325, 26.597, 162.505)
+a.Size = Vector3.new(30.8, 1, 5)
+a.Transparency = 1
+wait(0.1)
+local a = game.Workspace.Part66
 a.Size = Vector3.new(26.3615, 0.568867, 0.831195)
 wait(0.1)
-local a = game.Workspace.Part36
+local a = game.Workspace.Part31
 a.Size = Vector3.new(26.3615, 0.568867, 0.831195)
 wait(0.1)
 local a = game.Workspace.KillBlock5
@@ -1199,7 +1274,7 @@ local a = game.Workspace.KillBlock4
 a.Position = Vector3.new(82.6681, 36.7232, 162.398)
 a.Size = Vector3.new(10.1665, 0.397108, 0.66)
 wait(0.1)
-local a = game.Workspace.Part60
+local a = game.Workspace.Part53
 a.Size = Vector3.new(0.82278, 0.58, 13.7487)
 wait(0.1)
 local a = game.Workspace.KillBlock3
@@ -1208,16 +1283,16 @@ wait(0.1)
 local a = game.Workspace.KillBlock2
 a.Size = Vector3.new(0.957165, 0.397108, 5.02746)
 wait(0.1)
-local a = game.Workspace.KillBlock14
+local a = game.Workspace.KillBlock18
 a.Size = Vector3.new(0.957165, 0.397108, 5.02746)
 wait(0.1)
-local a = game.Workspace.Part40
+local a = game.Workspace.Part35
 a.CFrame = CFrame.new(125.572266, 61.1758041, 161.901794, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 a.Transparency = 1
 wait(0.1)
 game.Workspace.KillBlock1:Destroy()
 wait()
-game.Workspace.Part96:Destroy()
+game.Workspace.Part79:Destroy()
 end)
 
 God.Name = "God"
@@ -1307,7 +1382,7 @@ Title.BorderSizePixel = 0
 Title.Position = UDim2.new(0.0185185075, 0, 0.02892562, 0)
 Title.Size = UDim2.new(0, 116, 0, 39)
 Title.Font = Enum.Font.SourceSansLight
-Title.Text = "Yikik Gamer H4R7N Legit Hack (23.01.2021)"
+Title.Text = "Yikik Gamer H4R7N Legit Hack (28.01.2021)"
 Title.TextColor3 = Color3.fromRGB(0, 0, 0)
 Title.TextScaled = true
 Title.TextSize = 14.000
