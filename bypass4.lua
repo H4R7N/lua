@@ -1,4 +1,4 @@
-game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="Bypass 4 Yapiliyor Lutfen Bekleyiniz!",["Duration"]=4})
+game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="Cok Az Kaldi!!",["Duration"]=4})
 wait(0.1)
 local yarak3 = game.Workspace.KillBlock.KillBlock
 yarak3.Name = "KillBlock1"
