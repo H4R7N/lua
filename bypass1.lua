@@ -491,20 +491,19 @@ local yarak = game.Workspace.Part
 yarak.Name = "Part164"
 wait(0.1)
 local yarak = game.Workspace.Block
-yarak.Name = "Block1"
+yarak.Name = "Part165"
 wait(0.1)
 local yarak = game.Workspace.Block
-yarak.Name = "Block2"
+yarak.Name = "Part166"
 wait(0.1)
 local yarak = game.Workspace.Block
-yarak.Name = "Block3"
+yarak.Name = "Part167"
 wait(0.1)
 local yarak = game.Workspace.Block
-yarak.Name = "Block4"
+yarak.Name = "Part168"
 wait(0.1)
 local yarak = game.Workspace.Block
-yarak.Name = "Block5"
+yarak.Name = "Part169"
 wait(0.1)
 local yarak = game.Workspace.Block
-yarak.Name = "Block6"
-end)
+yarak.Name = "Part170"
