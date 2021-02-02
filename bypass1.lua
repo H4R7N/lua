@@ -954,3 +954,4 @@ yarak3.Name = "Lazer9"
 wait(0.1)
 local yarak3 = game.Workspace.KillBlock.Part
 yarak3.Name = "Lazer10"
+end)
