@@ -463,47 +463,20 @@ wait(0.1)
 local yarak = game.Workspace.Part
 yarak.Name = "Part155"
 wait(0.1)
-local yarak = game.Workspace.Part
+local yarak = game.Workspace.Block
 yarak.Name = "Part156"
 wait(0.1)
-local yarak = game.Workspace.Part
+local yarak = game.Workspace.Block
 yarak.Name = "Part157"
 wait(0.1)
-local yarak = game.Workspace.Part
+local yarak = game.Workspace.Block
 yarak.Name = "Part158"
 wait(0.1)
-local yarak = game.Workspace.Part
+local yarak = game.Workspace.Block
 yarak.Name = "Part159"
 wait(0.1)
-local yarak = game.Workspace.Part
+local yarak = game.Workspace.Block
 yarak.Name = "Part160"
 wait(0.1)
-local yarak = game.Workspace.Part
+local yarak = game.Workspace.Block
 yarak.Name = "Part161"
-wait(0.1)
-local yarak = game.Workspace.Part
-yarak.Name = "Part162"
-wait(0.1)
-local yarak = game.Workspace.Part
-yarak.Name = "Part163"
-wait(0.1)
-local yarak = game.Workspace.Part
-yarak.Name = "Part164"
-wait(0.1)
-local yarak = game.Workspace.Block
-yarak.Name = "Part165"
-wait(0.1)
-local yarak = game.Workspace.Block
-yarak.Name = "Part166"
-wait(0.1)
-local yarak = game.Workspace.Block
-yarak.Name = "Part167"
-wait(0.1)
-local yarak = game.Workspace.Block
-yarak.Name = "Part168"
-wait(0.1)
-local yarak = game.Workspace.Block
-yarak.Name = "Part169"
-wait(0.1)
-local yarak = game.Workspace.Block
-yarak.Name = "Part170"
