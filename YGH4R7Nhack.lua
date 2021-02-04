@@ -189,6 +189,12 @@ wait(0.1)
 local yarak = game.Workspace.KillBlock.KillBlock
 yarak.Name = "Part263"
 wait(0.1)
+local yarak = game.Workspace.tURNpLATFORM
+yarak.Name = "Part264"
+wait(0.1)
+local yarak = game.Workspace.tURNpLATFORM
+yarak.Name = "Part265"
+wait(0.1)
 game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="Bypass Basarili! Menu Yukleniyor!",["Duration"]=4})
 wait (3)
 game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="Menu Yuklendi. H4R7N İyi Oyunlar Diler!",["Duration"]=4})
@@ -344,7 +350,7 @@ local a = game.Workspace.Part61
 a.Size = Vector3.new(7, 1, 13)
 wait(0.1)
 local a = game.Workspace.Part60
-a.Size = Vector3.new(5, 1.2, 11.2)
+a.Size = Vector3.new(5, 1.2, 10.2)
 wait(0.1)
 local a = game.Workspace.Part140
 a.Size = Vector3.new(7, 1, 13)
@@ -421,6 +427,20 @@ wait(0.1)
 local a = game.Workspace.Part81
 a.Size = Vector3.new(8.1029, 0.568867, 0.831195)
 wait(0.1)
+local a = game.Workspace.Part19
+a.CFrame = CFrame.new(-130.939423, 39.3392258, 164.617676, -0.0175019503, 0, 0.999846935, 0, 1, 0, -0.999846935, 0, -0.0175019503)
+a.Color = Color3.fromRGB(0, 255, 0)
+a.Orientation = Vector3.new(0, 91, 0)
+a.Position = Vector3.new(-130.939, 39.3392, 164.618)
+a.Size = Vector3.new(4, 1, 20.6556)
+wait(0.1)
+local a = game.Workspace.Part2
+a.CFrame = CFrame.new(-108.739586, 54.576088, 164.617676, -0.0175019503, 0, 0.999846935, 0, 1, 0, -0.999846935, 0, -0.0175019503)
+a.Color = Color3.fromRGB(0, 255, 0)
+a.Orientation = Vector3.new(0, 91, 0)
+a.Position = Vector3.new(-108.74, 54.5761, 164.618)
+a.Size = Vector3.new(4, 1, 20.6556)
+wait(0.1)
 local a = game.Workspace.KillBlock.Part203
 a.Size = Vector3.new(1.25617, 0.397108, 0.614899)
 wait(0.1)
@@ -496,6 +516,10 @@ wait(0.1)
 game.Workspace.KillBlock.Part211:Destroy()
 wait()
 game.Workspace.Part71:Destroy()
+wait()
+game.Workspace.Part264:Destroy()
+wait()
+game.Workspace.Part265:Destroy()
 end)
 
 Kapa.Name = "Kapa"
