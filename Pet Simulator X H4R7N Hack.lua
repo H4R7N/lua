@@ -159,12 +159,26 @@ local args = {
 }
 
 workspace.__THINGS.__REMOTES.MAIN:FireServer(unpack(args))
+
+local args = {
+    [1] = "b",
+    [2] = "bank deposit"
+}
+
+workspace.__THINGS.__REMOTES.MAIN:FireServer(unpack(args))
+
+local args = {
+    [1] = "b",
+    [2] = "bank withdraw"
+}
+
+workspace.__THINGS.__REMOTES.MAIN:FireServer(unpack(args))
 wait(1)
 Framework.Message.New("Gerekli Fonksiyonlar Basariyla Kuruldu Artik Hazirsiniz!")
 wait(1)
 
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/H4R7N/lua/main/guisource1.lua"))()
-    local Window = Library.CreateLib("Pet Simulator X H4R7N Hack                      [Updated 16.11.2021]","Sentinel")
+    local Window = Library.CreateLib("Pet Simulator X H4R7N Hack                      [Updated 25.12.2021]","Sentinel")
  
     -- MAIN
     local Main = Window:NewTab("Main")
@@ -203,14 +217,96 @@ wait(1)
 			end
 		end)
     end)
-
+    
     MainSection:NewButton("Auto Collect", "auto collect the thrown coins.", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/H4R7N/lua/main/PetSimXAutoCollect.lua"))()
+    end)
+    
+    local MainSection = Main:NewSection("Auto Farm v2 (BETA)")
+    
+    MainSection:NewDropdown("Select the Area", "No Explanation.", {"VIP", "Town", "Forest", "Beach", "Mine", "Winter", "Ice Tech", "Glacier", "Desert", "Volcano", "Enchanted Forest", "Ancient Island", "Samurai Island", "Candy Island", "Haunted Island", "Hell Island", "Heaven Island", "Heavens Gate", "Tech City", "Dark Tech", "Steampunk", "Steampunk Chest", "Alien Lab", "Alien Forest", "Alien Chest"}, function(v)
+_G.Area = v
+    end)
+
+    MainSection:NewButton("Start the Auto Farm", "new", function()
+_G.Stop = false
+
+function FarmCoin(CoinID, PetID)
+   game.workspace['__THINGS']['__REMOTES']["join coin"]:InvokeServer({[1] = CoinID, [2] = {[1] = PetID}})
+   game.workspace['__THINGS']['__REMOTES']["farm coin"]:FireServer({[1] = CoinID, [2] = PetID})
+end
+
+function GetMyPets()
+   local returntable = {}
+   for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Inventory.Frame.Main.Pets:GetChildren()) do
+       if v.ClassName == 'TextButton' and v.Equipped.Visible then
+           table.insert(returntable, v.Name)
+       end
+   end
+   return returntable
+end
+
+function GetCoins(area)
+   local returntable = {}
+   local ListCoins = game.workspace['__THINGS']['__REMOTES']["get coins"]:InvokeServer({})[1]
+   for i,v in pairs(ListCoins) do
+       if string.lower(v.a) == string.lower(area) then
+           table.insert(returntable, i)
+       end
+   end
+   return returntable
+end
+
+while wait() and not _G.Stop do
+   local cointhiny = GetCoins(_G.Area)
+   local pethingy = GetMyPets()
+   for i = 1, #cointhiny do
+       pcall(function() FarmCoin(cointhiny[i], pethingy[i%#pethingy+1]) end)
+   end
+end
+    end)
+
+    MainSection:NewButton("Stop the Auto Farm", "new", function()
+_G.Stop = true
+
+function FarmCoin(CoinID, PetID)
+   game.workspace['__THINGS']['__REMOTES']["join coin"]:InvokeServer({[1] = CoinID, [2] = {[1] = PetID}})
+   game.workspace['__THINGS']['__REMOTES']["farm coin"]:FireServer({[1] = CoinID, [2] = PetID})
+end
+
+function GetMyPets()
+   local returntable = {}
+   for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Inventory.Frame.Main.Pets:GetChildren()) do
+       if v.ClassName == 'TextButton' and v.Equipped.Visible then
+           table.insert(returntable, v.Name)
+       end
+   end
+   return returntable
+end
+
+function GetCoins(area)
+   local returntable = {}
+   local ListCoins = game.workspace['__THINGS']['__REMOTES']["get coins"]:InvokeServer({})[1]
+   for i,v in pairs(ListCoins) do
+       if string.lower(v.a) == string.lower(area) then
+           table.insert(returntable, i)
+       end
+   end
+   return returntable
+end
+
+while wait() and not _G.Stop do
+   local cointhiny = GetCoins(_G.Area)
+   local pethingy = GetMyPets()
+   for i = 1, #cointhiny do
+       pcall(function() FarmCoin(cointhiny[i], pethingy[i%#pethingy+1]) end)
+   end
+end
     end)
 
     local MainSection = Main:NewSection("Collecting")
 
-    MainSection:NewToggle("Give Some Gamepasses", "No Explanation.", function(v)
+    MainSection:NewToggle("Buy Free TP and Auto Hatch Gamepasses", "No Explanation.", function(v)
     getgenv().gsg = v
     local gmppath = require(game:GetService("ReplicatedStorage").Framework.Modules.Client["5 | Gamepasses"])
 		gmppath.Owns = function() return true end
@@ -234,40 +330,6 @@ wait(1)
     }
 
     workspace.__THINGS.__REMOTES:FindFirstChild("redeem vip rewards"):InvokeServer(unpack(args))
-    end)
-
-    MainSection:NewButton("Redeem Twitter Codes", "Updated 16th November", function()
-    local args = {
-        [1] = {
-            [1] = "sorry4thewait"
-        }
-    }
-
-    workspace.__THINGS.__REMOTES:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
-
-    local args = {
-        [1] = {
-            [1] = "VoiceChat"
-        }
-    }
-
-    workspace.__THINGS.__REMOTES:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
-
-    local args = {
-        [1] = {
-            [1] = "its1million"
-        }
-    }
-
-    workspace.__THINGS.__REMOTES:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
-    
-        local args = {
-        [1] = {
-            [1] = "yaydiamonds2"
-        }
-    }
-
-    workspace.__THINGS.__REMOTES:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
     end)
 
     -- PLAYER
@@ -305,6 +367,10 @@ wait(1)
 
     PlayerSection:NewButton("Open Upgrade Menu", "No Explanation.", function()
     game.Players.LocalPlayer.PlayerGui.Upgrades.Enabled = true
+    end)
+    
+    PlayerSection:NewButton("Open My Bank", "No Explanation.", function()
+    game.Players.LocalPlayer.PlayerGui.Bank.Enabled = true
     end)
 
     -- Teleport
@@ -544,6 +610,10 @@ wait(1)
     EggSection:NewDropdown("Egg Menu", "No Explanation.", {"Cracked Egg", "Spotted Egg", "Golden Cracked Egg", "Golden Spotted Egg", "Wood Egg", "Grass Egg", "Golden Wood Egg", "Golden Grass Egg", "Beachball Egg", "Golden Beachball Egg", "Coconut Egg", "Golden Coconut Egg", "Rock Egg", "Golden Rock Egg", "Geode Egg", "Golden Geode Egg", "Cactus Egg", "Golden Cactus Egg", "Spiked Egg", "Golden Spiked Egg", "Snow Egg", "Golden Snow Egg", "Ice Egg", "Golden Ice Egg", "Obsidian Egg", "Golden Obsidian Egg", "Magma Egg", "Golden Magma Egg", "Yeti Egg", "Golden Yeti Egg", "Icicle Egg", "Golden Icicle Egg", "Alien Egg", "Dominus Egg", "Enchanted Egg", "Golden Enchanted Egg", "Relic Egg", "Golden Relic Egg", "Samurai Egg", "Golden Samurai Egg", "Rainbow Egg", "Golden Rainbow Egg", "Haunted Egg", "Golden Haunted Egg", "Hell Egg", "Golden Hell Egg", "Heaven Egg", "Golden Heaven Egg", "Empyrean Egg", "Golden Empyrean Egg", "Metal Egg", "Golden Metal Egg", "Tech Egg", "Golden Tech Egg", "Titanium Egg", "Golden Titanium Egg", "Dark Tech Egg", "Golden Dark Tech Egg", "Steampunk Egg", "Golden Steampunk Egg", "Mechanical Egg", "Golden Mechanical Egg", "Lab Egg", "Golden Lab Egg", "Chemical Egg", "Golden Chemical Egg", "Alien Egg", "Golden Alien Egg", "Martian Egg", "Golden Martian Egg", "Planet Egg", "Golden Planet Egg"}, function(v)
     SelectedEgg = v
     end)
+    
+    EggSection:NewDropdown("CHRISTMAS Egg Menu", "No Explanation.", {"Jolly Egg", "Golden Jolly Egg", "Gingerbread Egg", "Golden Gingerbread Egg", "Christmas Tree Egg", "Golden Christmas Tree Egg", "Egg of Many Gifts"}, function(v)
+    SelectedEgg = v
+    end)
 
     EggSection:NewToggle("Auto Open Egg", "No Explanation.", function(v)
     getgenv().autoegg = v
@@ -679,7 +749,7 @@ end)
     game.Players.LocalPlayer.PlayerGui.Main.Right.Coins.Amount.Text = v
     end)
 
-    VisualSection:NewTextBox("Gems :", "it's not real it's just for looks.", function(v)
+    VisualSection:NewTextBox("Diamonds :", "it's not real it's just for looks.", function(v)
     game.Players.LocalPlayer.PlayerGui.Main.Right.Diamonds.Amount.Text = v
     end)
 
@@ -689,5 +759,9 @@ end)
 
     VisualSection:NewTextBox("Tech Coins :", "it's not real it's just for looks.", function(v)
     game.Players.LocalPlayer.PlayerGui.Main.Right["Tech Coins"].Amount.Text = v
+    end)
+    
+    VisualSection:NewTextBox("Gingerbread :", "it's not real it's just for looks.", function(v)
+    game.Players.LocalPlayer.PlayerGui.Main.Right["Gingerbread"].Amount.Text = v
     end)
 end
