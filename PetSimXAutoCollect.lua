@@ -1,6 +1,8 @@
-while true do wait(0.1)
+while wait() do
 	for i,v in pairs(game:GetService("Workspace")["__THINGS"].Orbs:GetChildren()) do
-		v.CanCollide = false
-		v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,0,0)
+		v.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
 	end
+	for i,v in pairs(game:GetService("Workspace")["__THINGS"].Lootbags:GetChildren()) do
+    		v.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+    	end
 end
