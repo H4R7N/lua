@@ -12,7 +12,7 @@ game.StarterGui:SetCore("SendNotification",{["Title"]="Warning!",["Text"]="The r
 	end
 
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/H4R7N/lua/main/guisource1.lua"))()
-    local Window = Library.CreateLib("J.T.O.H. H4R7N Hack v1.1                            [Updated 10.01.2022]","Sentinel")
+    local Window = Library.CreateLib("J.T.O.H. H4R7N Hack v1.1.1                            [Updated 11.01.2022]","Sentinel")
  
     -- MAIN
     local Main = Window:NewTab("Main")
@@ -57,7 +57,7 @@ end
     local freeze = game.workspace:GetDescendants()
 
 	for i,v in pairs (freeze) do
-		if v.Name == "Start" then
+		if v.Name == "Start" or v.Name == "SpawnLocation" then
 		    while wait() do
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame + Vector3.new(0, 3, 0)
 			end
