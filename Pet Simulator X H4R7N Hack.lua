@@ -178,7 +178,7 @@ Framework.Message.New("Gerekli Fonksiyonlar Basariyla Kuruldu Artik Hazirsiniz!"
 wait(1)
 
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/H4R7N/lua/main/guisource1.lua"))()
-    local Window = Library.CreateLib("Pet Simulator X H4R7N Hack                      [Updated 25.12.2021]","Sentinel")
+    local Window = Library.CreateLib("Pet Simulator X H4R7N Hack                     [Updated 26.01.2022]","Sentinel")
  
     -- MAIN
     local Main = Window:NewTab("Main")
@@ -224,7 +224,7 @@ wait(1)
     
     local MainSection = Main:NewSection("Auto Farm v2 (BETA)")
     
-    MainSection:NewDropdown("Select the Area", "No Explanation.", {"VIP", "Town", "Forest", "Beach", "Mine", "Winter", "Ice Tech", "Glacier", "Desert", "Volcano", "Enchanted Forest", "Ancient Island", "Samurai Island", "Candy Island", "Haunted Island", "Hell Island", "Heaven Island", "Heavens Gate", "Tech City", "Dark Tech", "Steampunk", "Steampunk Chest", "Alien Lab", "Alien Forest", "Alien Chest"}, function(v)
+    MainSection:NewDropdown("Select the Area", "No Explanation.", {"VIP", "Town", "Forest", "Beach", "Mine", "Winter", "Ice Tech", "Glacier", "Desert", "Volcano", "Enchanted Forest", "Ancient Island", "Samurai Island", "Candy Island", "Haunted Island", "Hell Island", "Heaven Island", "Heavens Gate", "Tech City", "Dark Tech", "Steampunk", "Steampunk Chest", "Alien Lab", "Alien Forest", "Alien Chest", "Glitch", "Hacker Portal"}, function(v)
 _G.Area = v
     end)
 
@@ -306,7 +306,7 @@ end
 
     local MainSection = Main:NewSection("Collecting")
 
-    MainSection:NewToggle("Buy Free TP and Auto Hatch Gamepasses", "No Explanation.", function(v)
+    MainSection:NewToggle("Buy Free Some Gamepasses", "No Explanation.", function(v)
     getgenv().gsg = v
     local gmppath = require(game:GetService("ReplicatedStorage").Framework.Modules.Client["5 | Gamepasses"])
 		gmppath.Owns = function() return true end
@@ -377,7 +377,7 @@ end
     local Teleport = Window:NewTab("Teleport")
     local TPSection = Teleport:NewSection("Teleport")
 
-    TPSection:NewDropdown("TP Menu", "No Explanation.", {"VIP", "Shop", "Town", "Forest", "Beach", "Mine", "Winter", "Ice Tech", "Glacier", "Desert", "Volcano", "Cave", "Fantasy Shop", "Enchanted Forest", "Fantasy Portals", "Ancient Island", "Samurai Island", "Candy Island", "Haunted Island", "Hell Island", "Heaven Island", "Heavens Gate", "Tech Shop", "Tech City", "Dark Tech", "Steampunk", "Steampunk Chest", "Alien Lab", "Alien Forest", "Alien Chest"}, function(v)
+    TPSection:NewDropdown("TP Menu", "No Explanation.", {"VIP", "Shop", "Town", "Forest", "Beach", "Mine", "Winter", "Ice Tech", "Glacier", "Desert", "Volcano", "Cave", "Fantasy Shop", "Enchanted Forest", "Fantasy Portals", "Ancient Island", "Samurai Island", "Candy Island", "Haunted Island", "Hell Island", "Heaven Island", "Heavens Gate", "Tech Shop", "Tech City", "Dark Tech", "Steampunk", "Steampunk Chest", "Alien Lab", "Alien Forest", "Alien Chest", "Glitch", "Hacker Portal"}, function(v)
     if v == "VIP" then
     if game.Workspace["__MAP"].Teleports:FindFirstChild("Shop") then
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
@@ -588,6 +588,20 @@ end
     game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Tech World!",["Duration"]=4})
     end
     end
+    if v == "Glitch" then
+    if game.Workspace["__MAP"].Teleports:FindFirstChild("Tech Shop") then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
+    else
+    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Tech World!",["Duration"]=4})
+    end
+    end
+    if v == "Hacker Portal" then
+    if game.Workspace["__MAP"].Teleports:FindFirstChild("Tech Shop") then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
+    else
+    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Tech World!",["Duration"]=4})
+    end
+    end
     end)
     
     TPSection:NewDropdown("TP Menu 2", "No Explanation.", {"Main Game", "Trading Plaza"}, function(v)
@@ -607,11 +621,7 @@ end
     local Eggs = Window:NewTab("Pets")
     local EggSection = Eggs:NewSection("Pets")
 
-    EggSection:NewDropdown("Egg Menu", "No Explanation.", {"Cracked Egg", "Spotted Egg", "Golden Cracked Egg", "Golden Spotted Egg", "Wood Egg", "Grass Egg", "Golden Wood Egg", "Golden Grass Egg", "Beachball Egg", "Golden Beachball Egg", "Coconut Egg", "Golden Coconut Egg", "Rock Egg", "Golden Rock Egg", "Geode Egg", "Golden Geode Egg", "Cactus Egg", "Golden Cactus Egg", "Spiked Egg", "Golden Spiked Egg", "Snow Egg", "Golden Snow Egg", "Ice Egg", "Golden Ice Egg", "Obsidian Egg", "Golden Obsidian Egg", "Magma Egg", "Golden Magma Egg", "Yeti Egg", "Golden Yeti Egg", "Icicle Egg", "Golden Icicle Egg", "Alien Egg", "Dominus Egg", "Enchanted Egg", "Golden Enchanted Egg", "Relic Egg", "Golden Relic Egg", "Samurai Egg", "Golden Samurai Egg", "Rainbow Egg", "Golden Rainbow Egg", "Haunted Egg", "Golden Haunted Egg", "Hell Egg", "Golden Hell Egg", "Heaven Egg", "Golden Heaven Egg", "Empyrean Egg", "Golden Empyrean Egg", "Metal Egg", "Golden Metal Egg", "Tech Egg", "Golden Tech Egg", "Titanium Egg", "Golden Titanium Egg", "Dark Tech Egg", "Golden Dark Tech Egg", "Steampunk Egg", "Golden Steampunk Egg", "Mechanical Egg", "Golden Mechanical Egg", "Lab Egg", "Golden Lab Egg", "Chemical Egg", "Golden Chemical Egg", "Alien Egg", "Golden Alien Egg", "Martian Egg", "Golden Martian Egg", "Planet Egg", "Golden Planet Egg"}, function(v)
-    SelectedEgg = v
-    end)
-    
-    EggSection:NewDropdown("CHRISTMAS Egg Menu", "No Explanation.", {"Jolly Egg", "Golden Jolly Egg", "Gingerbread Egg", "Golden Gingerbread Egg", "Christmas Tree Egg", "Golden Christmas Tree Egg", "Egg of Many Gifts"}, function(v)
+    EggSection:NewDropdown("Egg Menu", "No Explanation.", {"Cracked Egg", "Spotted Egg", "Golden Cracked Egg", "Golden Spotted Egg", "Wood Egg", "Grass Egg", "Golden Wood Egg", "Golden Grass Egg", "Beachball Egg", "Golden Beachball Egg", "Coconut Egg", "Golden Coconut Egg", "Rock Egg", "Golden Rock Egg", "Geode Egg", "Golden Geode Egg", "Cactus Egg", "Golden Cactus Egg", "Spiked Egg", "Golden Spiked Egg", "Snow Egg", "Golden Snow Egg", "Ice Egg", "Golden Ice Egg", "Obsidian Egg", "Golden Obsidian Egg", "Magma Egg", "Golden Magma Egg", "Yeti Egg", "Golden Yeti Egg", "Icicle Egg", "Golden Icicle Egg", "Alien Egg", "Dominus Egg", "Enchanted Egg", "Golden Enchanted Egg", "Relic Egg", "Golden Relic Egg", "Samurai Egg", "Golden Samurai Egg", "Rainbow Egg", "Golden Rainbow Egg", "Haunted Egg", "Golden Haunted Egg", "Hell Egg", "Golden Hell Egg", "Heaven Egg", "Golden Heaven Egg", "Empyrean Egg", "Golden Empyrean Egg", "Metal Egg", "Golden Metal Egg", "Tech Egg", "Golden Tech Egg", "Titanium Egg", "Golden Titanium Egg", "Dark Tech Egg", "Golden Dark Tech Egg", "Steampunk Egg", "Golden Steampunk Egg", "Mechanical Egg", "Golden Mechanical Egg", "Lab Egg", "Golden Lab Egg", "Chemical Egg", "Golden Chemical Egg", "Alien Egg", "Golden Alien Egg", "Martian Egg", "Golden Martian Egg", "Planet Egg", "Golden Planet Egg", "Glitch Egg", "Golden Glitch Egg", "Hacker Egg", "Golden Hacker Egg"}, function(v)
     SelectedEgg = v
     end)
 
@@ -637,7 +647,7 @@ end
 		workspace.__THINGS.__REMOTES["buy egg"]:InvokeServer({tostring(SelectedEgg),false})
     end)
 
-    EggSection:NewDropdown("Manage Pets", "No Explanation.", {"Open Fuse Machine", "Open Golden Machine", "Open Rainbow Machine", "Open Enchant Machine", "Open Pet Collection Machine", "Open Merchant"}, function(v)
+    EggSection:NewDropdown("Manage Pets", "No Explanation.", {"Open Fuse Machine", "Open Golden Machine", "Open Rainbow Machine", "Open Enchant Machine", "Open Pet Collection Machine", "Open Merchant", "Open Dark Matter Machine"}, function(v)
     if v == "Open Fuse Machine" then
     game.Players.LocalPlayer.PlayerGui.FusePets.Enabled = true
     end
@@ -655,6 +665,9 @@ end
     end
     if v == "Open Merchant" then
     game.Players.LocalPlayer.PlayerGui.Merchant.Enabled = true
+    end
+    if v == "Open Dark Matter Machine" then
+    game.Players.LocalPlayer.PlayerGui.DarkMatter.Enabled = true
     end
     end)
     
@@ -759,9 +772,5 @@ end)
 
     VisualSection:NewTextBox("Tech Coins :", "it's not real it's just for looks.", function(v)
     game.Players.LocalPlayer.PlayerGui.Main.Right["Tech Coins"].Amount.Text = v
-    end)
-    
-    VisualSection:NewTextBox("Gingerbread :", "it's not real it's just for looks.", function(v)
-    game.Players.LocalPlayer.PlayerGui.Main.Right["Gingerbread"].Amount.Text = v
     end)
 end
