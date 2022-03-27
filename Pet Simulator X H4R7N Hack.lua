@@ -173,12 +173,19 @@ local args = {
 }
 
 workspace.__THINGS.__REMOTES.MAIN:FireServer(unpack(args))
+
+local args = {
+    [1] = "b",
+    [2] = "redeem free gift"
+}
+
+workspace.__THINGS.__REMOTES.MAIN:FireServer(unpack(args))
 wait(1)
 Framework.Message.New("Gerekli Fonksiyonlar Basariyla Kuruldu Artik Hazirsiniz!")
 wait(1)
 
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/H4R7N/lua/main/guisource1.lua"))()
-    local Window = Library.CreateLib("Pet Simulator X H4R7N Hack                     [Updated 26.01.2022]","Sentinel")
+    local Window = Library.CreateLib("Pet Simulator X H4R7N Hack                     [Updated 27.03.2022]","Midnight")
  
     -- MAIN
     local Main = Window:NewTab("Main")
@@ -224,7 +231,7 @@ wait(1)
     
     local MainSection = Main:NewSection("Auto Farm v2 (BETA)")
     
-    MainSection:NewDropdown("Select the Area", "No Explanation.", {"VIP", "Town", "Forest", "Beach", "Mine", "Winter", "Ice Tech", "Glacier", "Desert", "Volcano", "Enchanted Forest", "Ancient Island", "Samurai Island", "Candy Island", "Haunted Island", "Hell Island", "Heaven Island", "Heavens Gate", "Tech City", "Dark Tech", "Steampunk", "Steampunk Chest", "Alien Lab", "Alien Forest", "Alien Chest", "Glitch", "Hacker Portal"}, function(v)
+    MainSection:NewDropdown("Select the Area", "No Explanation.", {"VIP", "Town", "Forest", "Beach", "Mine", "Winter", "Ice Tech", "Glacier", "Desert", "Volcano", "Enchanted Forest", "Ancient Island", "Samurai Island", "Candy Island", "Haunted Island", "Hell Island", "Heaven Island", "Heavens Gate", "Tech City", "Dark Tech", "Steampunk", "Steampunk Chest", "Alien Lab", "Alien Forest", "Alien Chest", "Glitch", "Hacker Portal", "Axolotl Ocean", "Axolotl Deep Ocean", "Axolotl Cave", "Pixel Forest", "Pixel Kyoto", "Pixel Alps", "Pixel Vault"}, function(v)
 _G.Area = v
     end)
 
@@ -331,6 +338,104 @@ end
 
     workspace.__THINGS.__REMOTES:FindFirstChild("redeem vip rewards"):InvokeServer(unpack(args))
     end)
+    
+    MainSection:NewButton("Auto Collect Gifts", "No Explanation.", function()
+    local args = {
+    [1] = {
+        [1] = 1
+    }
+}
+
+workspace.__THINGS.__REMOTES:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = 2
+    }
+}
+
+workspace.__THINGS.__REMOTES:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = 3
+    }
+}
+
+workspace.__THINGS.__REMOTES:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = 4
+    }
+}
+
+workspace.__THINGS.__REMOTES:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = 5
+    }
+}
+
+workspace.__THINGS.__REMOTES:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = 6
+    }
+}
+
+workspace.__THINGS.__REMOTES:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = 7
+    }
+}
+
+workspace.__THINGS.__REMOTES:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = 8
+    }
+}
+
+workspace.__THINGS.__REMOTES:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = 9
+    }
+}
+
+workspace.__THINGS.__REMOTES:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = 10
+    }
+}
+
+workspace.__THINGS.__REMOTES:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = 11
+    }
+}
+
+workspace.__THINGS.__REMOTES:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = 12
+    }
+}
+
+workspace.__THINGS.__REMOTES:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+    end)
 
     -- PLAYER
     local Player = Window:NewTab("Player")
@@ -377,231 +482,8 @@ end
     local Teleport = Window:NewTab("Teleport")
     local TPSection = Teleport:NewSection("Teleport")
 
-    TPSection:NewDropdown("TP Menu", "No Explanation.", {"VIP", "Shop", "Town", "Forest", "Beach", "Mine", "Winter", "Ice Tech", "Glacier", "Desert", "Volcano", "Cave", "Fantasy Shop", "Enchanted Forest", "Fantasy Portals", "Ancient Island", "Samurai Island", "Candy Island", "Haunted Island", "Hell Island", "Heaven Island", "Heavens Gate", "Tech Shop", "Tech City", "Dark Tech", "Steampunk", "Steampunk Chest", "Alien Lab", "Alien Forest", "Alien Chest", "Glitch", "Hacker Portal"}, function(v)
-    if v == "VIP" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Spawn World!",["Duration"]=4})
-    end
-    end
-    if v == "Shop" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Spawn World!",["Duration"]=4})
-    end
-    end
-    if v == "Town" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Spawn World!",["Duration"]=4})
-    end
-    end
-    if v == "Forest" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Spawn World!",["Duration"]=4})
-    end
-    end
-    if v == "Beach" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Spawn World!",["Duration"]=4})
-    end
-    end
-    if v == "Mine" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Spawn World!",["Duration"]=4})
-    end
-    end
-    if v == "Winter" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Spawn World!",["Duration"]=4})
-    end
-    end
-    if v == "Ice Tech" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Spawn World!",["Duration"]=4})
-    end
-    end
-    if v == "Glacier" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Spawn World!",["Duration"]=4})
-    end
-    end
-    if v == "Desert" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Spawn World!",["Duration"]=4})
-    end
-    end
-    if v == "Volcano" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Spawn World!",["Duration"]=4})
-    end
-    end
-    if v == "Cave" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Spawn World!",["Duration"]=4})
-    end
-    end
-    if v == "Fantasy Shop" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Enchanted Forest") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Fantasy World!",["Duration"]=4})
-    end
-    end
-    if v == "Enchanted Forest" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Enchanted Forest") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Fantasy World!",["Duration"]=4})
-    end
-    end
-    if v == "Fantasy Portals" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Enchanted Forest") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Fantasy World!",["Duration"]=4})
-    end
-    end
-    if v == "Ancient Island" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Enchanted Forest") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Fantasy World!",["Duration"]=4})
-    end
-    end
-    if v == "Samurai Island" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Enchanted Forest") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Fantasy World!",["Duration"]=4})
-    end
-    end
-    if v == "Candy Island" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Enchanted Forest") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Fantasy World!",["Duration"]=4})
-    end
-    end
-    if v == "Haunted Island" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Enchanted Forest") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Fantasy World!",["Duration"]=4})
-    end
-    end
-    if v == "Hell Island" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Enchanted Forest") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Fantasy World!",["Duration"]=4})
-    end
-    end
-    if v == "Heaven Island" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Enchanted Forest") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Fantasy World!",["Duration"]=4})
-    end
-    end
-    if v == "Heavens Gate" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Enchanted Forest") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Fantasy World!",["Duration"]=4})
-    end
-    end
-    if v == "Tech Shop" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Tech Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Tech World!",["Duration"]=4})
-    end
-    end
-    if v == "Tech City" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Tech Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Tech World!",["Duration"]=4})
-    end
-    end
-    if v == "Dark Tech" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Tech Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Tech World!",["Duration"]=4})
-    end
-    end
-    if v == "Steampunk" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Tech Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Tech World!",["Duration"]=4})
-    end
-    end
-    if v == "Steampunk Chest" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Tech Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Tech World!",["Duration"]=4})
-    end
-    end
-    if v == "Alien Lab" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Tech Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Tech World!",["Duration"]=4})
-    end
-        end
-    if v == "Alien Forest" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Tech Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Tech World!",["Duration"]=4})
-    end
-    end
-    if v == "Alien Chest" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Tech Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Tech World!",["Duration"]=4})
-    end
-    end
-    if v == "Glitch" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Tech Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Tech World!",["Duration"]=4})
-    end
-    end
-    if v == "Hacker Portal" then
-    if game.Workspace["__MAP"].Teleports:FindFirstChild("Tech Shop") then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace["__MAP"].Teleports[v].CFrame
-    else
-    game.StarterGui:SetCore("SendNotification",{["Title"]="H4R7N Hack",["Text"]="You are not in the Tech World!",["Duration"]=4})
-    end
-    end
+    TPSection:NewButton("TP Menu", "No Explanation.", function()
+    game.Players.LocalPlayer.PlayerGui.Teleport.Enabled = true
     end)
     
     TPSection:NewDropdown("TP Menu 2", "No Explanation.", {"Main Game", "Trading Plaza"}, function(v)
@@ -621,7 +503,7 @@ end
     local Eggs = Window:NewTab("Pets")
     local EggSection = Eggs:NewSection("Pets")
 
-    EggSection:NewDropdown("Egg Menu", "No Explanation.", {"Cracked Egg", "Spotted Egg", "Golden Cracked Egg", "Golden Spotted Egg", "Wood Egg", "Grass Egg", "Golden Wood Egg", "Golden Grass Egg", "Beachball Egg", "Golden Beachball Egg", "Coconut Egg", "Golden Coconut Egg", "Rock Egg", "Golden Rock Egg", "Geode Egg", "Golden Geode Egg", "Cactus Egg", "Golden Cactus Egg", "Spiked Egg", "Golden Spiked Egg", "Snow Egg", "Golden Snow Egg", "Ice Egg", "Golden Ice Egg", "Obsidian Egg", "Golden Obsidian Egg", "Magma Egg", "Golden Magma Egg", "Yeti Egg", "Golden Yeti Egg", "Icicle Egg", "Golden Icicle Egg", "Alien Egg", "Dominus Egg", "Enchanted Egg", "Golden Enchanted Egg", "Relic Egg", "Golden Relic Egg", "Samurai Egg", "Golden Samurai Egg", "Rainbow Egg", "Golden Rainbow Egg", "Haunted Egg", "Golden Haunted Egg", "Hell Egg", "Golden Hell Egg", "Heaven Egg", "Golden Heaven Egg", "Empyrean Egg", "Golden Empyrean Egg", "Metal Egg", "Golden Metal Egg", "Tech Egg", "Golden Tech Egg", "Titanium Egg", "Golden Titanium Egg", "Dark Tech Egg", "Golden Dark Tech Egg", "Steampunk Egg", "Golden Steampunk Egg", "Mechanical Egg", "Golden Mechanical Egg", "Lab Egg", "Golden Lab Egg", "Chemical Egg", "Golden Chemical Egg", "Alien Egg", "Golden Alien Egg", "Martian Egg", "Golden Martian Egg", "Planet Egg", "Golden Planet Egg", "Glitch Egg", "Golden Glitch Egg", "Hacker Egg", "Golden Hacker Egg"}, function(v)
+    EggSection:NewDropdown("Egg Menu", "No Explanation.", {"Cracked Egg", "Spotted Egg", "Golden Cracked Egg", "Golden Spotted Egg", "Wood Egg", "Grass Egg", "Golden Wood Egg", "Golden Grass Egg", "Beachball Egg", "Golden Beachball Egg", "Coconut Egg", "Golden Coconut Egg", "Rock Egg", "Golden Rock Egg", "Geode Egg", "Golden Geode Egg", "Cactus Egg", "Golden Cactus Egg", "Spiked Egg", "Golden Spiked Egg", "Snow Egg", "Golden Snow Egg", "Ice Egg", "Golden Ice Egg", "Obsidian Egg", "Golden Obsidian Egg", "Magma Egg", "Golden Magma Egg", "Yeti Egg", "Golden Yeti Egg", "Icicle Egg", "Golden Icicle Egg", "Alien Egg", "Dominus Egg", "Enchanted Egg", "Golden Enchanted Egg", "Relic Egg", "Golden Relic Egg", "Samurai Egg", "Golden Samurai Egg", "Rainbow Egg", "Golden Rainbow Egg", "Haunted Egg", "Golden Haunted Egg", "Hell Egg", "Golden Hell Egg", "Heaven Egg", "Golden Heaven Egg", "Empyrean Egg", "Golden Empyrean Egg", "Metal Egg", "Golden Metal Egg", "Tech Egg", "Golden Tech Egg", "Titanium Egg", "Golden Titanium Egg", "Dark Tech Egg", "Golden Dark Tech Egg", "Steampunk Egg", "Golden Steampunk Egg", "Mechanical Egg", "Golden Mechanical Egg", "Lab Egg", "Golden Lab Egg", "Chemical Egg", "Golden Chemical Egg", "Alien Egg", "Golden Alien Egg", "Martian Egg", "Golden Martian Egg", "Planet Egg", "Golden Planet Egg", "Glitch Egg", "Golden Glitch Egg", "Hacker Egg", "Golden Hacker Egg", "Axolotl Egg", "Golden Axolotl Egg", "Shiny Axolotl Egg", "Golden Shiny Axolotl Egg", "Pixel Egg", "Golden Pixel Egg", "Spotted Pixel Egg", "Golden Spotted Pixel Egg", "Rainbow Pixel Egg", "Golden Rainbow Pixel Egg"}, function(v)
     SelectedEgg = v
     end)
 
@@ -772,5 +654,9 @@ end)
 
     VisualSection:NewTextBox("Tech Coins :", "it's not real it's just for looks.", function(v)
     game.Players.LocalPlayer.PlayerGui.Main.Right["Tech Coins"].Amount.Text = v
+    end)
+    
+    VisualSection:NewTextBox("Rainbow Coins :", "it's not real it's just for looks.", function(v)
+    game.Players.LocalPlayer.PlayerGui.Main.Right["Rainbow Coins"].Amount.Text = v
     end)
 end
