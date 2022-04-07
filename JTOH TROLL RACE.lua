@@ -32,6 +32,7 @@ Menu.Active = true
 Menu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Menu.Position = UDim2.new(0.435860068, 0, 0.196969673, 0)
 Menu.Size = UDim2.new(0.127696797, 0, 0.606060684, 0)
+Menu.Draggable = true
 
 baslik.Name = "baslik"
 baslik.Parent = Menu
