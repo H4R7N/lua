@@ -1,3 +1,5 @@
+if game.CoreGui.RobloxGui:FindFirstChild("JTOH") then
+else
 -- Gui to Lua
 -- Version: 3.2
 
@@ -352,3 +354,4 @@ local function IJLBF_fake_script() -- _2_2.LocalScript
 	end)
 end
 coroutine.wrap(IJLBF_fake_script)()
+end
