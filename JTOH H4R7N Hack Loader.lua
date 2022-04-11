@@ -1,6 +1,29 @@
+local yer1ve1 = 9070657865
+local yer1ve2 = 9070979698
+local yer1ve3 = 9070980083
+local yer1ve4 = 9070980555
+local yer1ve5 = 9070980846
+local yer1ve6 = 9070981164
+local yer1ve7 = 9070981409
+local yer1ve8 = 9070981722
+local yer1ve9 = 9070982474
+local yer2ve1 = 9071001075
+local yer2ve2 = 9071001366
+local yer2ve3 = 9071001563
+local yer2ve4 = 9071001883
+local yer2ve5 = 9071002104
+
+if game.Players.LocalPlayer.Name == AtrexiIla then
+
 setclipboard("https://www.youtube.com/watch?v=-b5tK8M1jv8")
 game.StarterGui:SetCore("SendNotification",{["Title"]="Tutorial!",["Text"]="The video of the cheat has been copied to the clipboard!",["Duration"]=20,["Button1"]="OK!"})
 
-if game.PlaceId == 2920068706 or game.PlaceId == 2921149558 or game.PlaceId == 2921150129 or game.PlaceId == 2921151152 or game.PlaceId == 2921153965 or game.PlaceId == 2921154244 or game.PlaceId == 2921154946 or game.PlaceId == 2921155105 or game.PlaceId == 2921155228 or game.PlaceId == 2942729079 or game.PlaceId == 2942730116 or game.PlaceId == 3712200731 or game.PlaceId == 3712201724 or game.PlaceId == 3712202960 then
+if game.PlaceId == yer1ve1 or game.PlaceId == yer1ve2 or game.PlaceId == yer1ve3 or game.PlaceId == yer1ve4 or game.PlaceId == yer1ve5 or game.PlaceId == yer1ve6 or game.PlaceId == yer1ve7 or game.PlaceId == yer1ve8 or game.PlaceId == yer1ve9 or game.PlaceId == yer2ve1 or game.PlaceId == yer2ve2 or game.PlaceId == yer2ve3 or game.PlaceId == yer2ve4 or game.PlaceId == yer2ve5 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/H4R7N/lua/main/JTOH%20H4R7N%20Hack.lua"))()
+else
+game.Players.LocalPlayer:Kick("this game is not supported.")
+end
+
+else
+game.Players.LocalPlayer:Kick("v1.2 coming soon!")
 end
