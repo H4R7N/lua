@@ -507,7 +507,7 @@ hookfunction(tick, function() return 0 end)
 firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, game:GetService("Workspace").Teleporters[y0].Teleporter.TPFRAME, 0)
 wait(1)
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
-hookfunction(tick, function() return math.random(1200.01 , 3600.99) end)
+hookfunction(tick, function() return math.random(31313131.31 , 6969696969.69) end)
 wait(1)
 local args = {
     [1] = (y0.."_1"),
