@@ -13,7 +13,7 @@ local yer2ve3 = 9071001563
 local yer2ve4 = 9071001883
 local yer2ve5 = 9071002104
 
-if game.Players.LocalPlayer.Name == AtrexiIla then
+if game.Players.LocalPlayer.Name == "AtrexiIla" then
 
 setclipboard("https://www.youtube.com/watch?v=-b5tK8M1jv8")
 game.StarterGui:SetCore("SendNotification",{["Title"]="Tutorial!",["Text"]="The video of the cheat has been copied to the clipboard!",["Duration"]=20,["Button1"]="OK!"})
