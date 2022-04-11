@@ -13,17 +13,11 @@ local yer2ve3 = 9071001563
 local yer2ve4 = 9071001883
 local yer2ve5 = 9071002104
 
-if game.Players.LocalPlayer.Name == "AtrexiIla" then
-
-setclipboard("https://www.youtube.com/watch?v=-b5tK8M1jv8")
+setclipboard("https://www.youtube.com/watch?v=s0MLdiYTVRE")
 game.StarterGui:SetCore("SendNotification",{["Title"]="Tutorial!",["Text"]="The video of the cheat has been copied to the clipboard!",["Duration"]=20,["Button1"]="OK!"})
 
 if game.PlaceId == yer1ve1 or game.PlaceId == yer1ve2 or game.PlaceId == yer1ve3 or game.PlaceId == yer1ve4 or game.PlaceId == yer1ve5 or game.PlaceId == yer1ve6 or game.PlaceId == yer1ve7 or game.PlaceId == yer1ve8 or game.PlaceId == yer1ve9 or game.PlaceId == yer2ve1 or game.PlaceId == yer2ve2 or game.PlaceId == yer2ve3 or game.PlaceId == yer2ve4 or game.PlaceId == yer2ve5 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/H4R7N/lua/main/JTOH%20H4R7N%20Hack.lua"))()
 else
 game.Players.LocalPlayer:Kick("this game is not supported.")
-end
-
-else
-game.Players.LocalPlayer:Kick("v1.2 coming soon!")
 end
