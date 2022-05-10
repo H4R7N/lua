@@ -1,4 +1,6 @@
-    local args = {
+while wait(1) do
+
+local args = {
     [1] = {
         [1] = 1
     }
@@ -93,3 +95,5 @@ local args = {
 }
 
 workspace.__THINGS.__REMOTES:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+    
+end
