@@ -4,7 +4,7 @@ else
 game.StarterGui:SetCore("SendNotification",{["Title"]="Warning!",["Text"]="The risk of being banned for cheating is low, it is not recommended to open it in the main account!",["Duration"]=20,["Button1"]="OK!"})
 
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/H4R7N/lua/main/guisource1.lua"))()
-    local Window = Library.CreateLib("J.T.O.H. H4R7N Hack v1.2                           [Updated 11.04.2022]","Midnight")
+    local Window = Library.CreateLib("J.T.O.H. H4R7N Hack v1.2.1                         [Updated 14.05.2022]","Midnight")
  
     -- MAIN
     local Main = Window:NewTab("Main")
@@ -45,16 +45,22 @@ else
 end
     end)
 
-    MainSection:NewButton("Freeze Me", "No one will know that you are Cheating.", function()
+    MainSection:NewButton("Freeze Me [Updated for Ring 6]", "No one will know that you are Cheating.", function()
+    if game.PlaceId == 9070981164 then
+        while wait() do
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Start.CFrame + Vector3.new(0, 3, 0)
+        end
+    else
     local freeze = game.workspace:GetDescendants()
 
 	for i,v in pairs (freeze) do
 		if v.Name == "Start" or v.Name == "SpawnLocation" then
 		    while wait() do
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame + Vector3.new(0, 3, 0)
-			end
+		    end
 		end
 	end
+    end
     end)
 
     local MainSection = Main:NewSection("Method 2")
