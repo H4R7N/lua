@@ -1,5 +1,5 @@
 game.Players.LocalPlayer.Character.Humanoid.Health = 0
-    wait(2)
+    wait(1.5)
     	local killparts = game.workspace:GetDescendants()
 
 	for i,v in pairs (killparts) do
