@@ -1,4 +1,9 @@
-  	local killparts = game.workspace:GetDescendants()
+local on
+local off
+
+if on then
+    wait(2)
+    	local killparts = game.workspace:GetDescendants()
 
 	for i,v in pairs (killparts) do
 		if v.ClassName == "TextLabel" then
@@ -117,4 +122,6 @@
 		    end
 		end
 	end
-game.Players.LocalPlayer.CharacterAdded:Connect(orospu)
+elseif off then
+    return
+end
