@@ -1,7 +1,5 @@
-local on
-local off
-
-if on then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+function orospu()
     wait(2)
     	local killparts = game.workspace:GetDescendants()
 
@@ -122,6 +120,5 @@ if on then
 		    end
 		end
 	end
-elseif off then
-    return
 end
+game.Players.LocalPlayer.CharacterAdded:Connect(orospu)
