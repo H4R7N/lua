@@ -1,6 +1,4 @@
-game.Players.LocalPlayer.Character.Humanoid.Health = 0
-    wait(1.5)
-    	local killparts = game.workspace:GetDescendants()
+  	local killparts = game.workspace:GetDescendants()
 
 	for i,v in pairs (killparts) do
 		if v.ClassName == "TextLabel" then
@@ -119,3 +117,4 @@ game.Players.LocalPlayer.Character.Humanoid.Health = 0
 		    end
 		end
 	end
+game.Players.LocalPlayer.CharacterAdded:Connect(orospu)
