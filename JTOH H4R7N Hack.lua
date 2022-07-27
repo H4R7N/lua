@@ -4,7 +4,7 @@ else
 game.StarterGui:SetCore("SendNotification",{["Title"]="Warning!",["Text"]="The risk of being banned for cheating is low, it is not recommended to open it in the main account!",["Duration"]=20,["Button1"]="OK!"})
 
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/H4R7N/lua/main/guisource1.lua"))()
-    local Window = Library.CreateLib("J.T.O.H. H4R7N Hack v1.2.1                         [Updated 14.05.2022]","Midnight")
+    local Window = Library.CreateLib("J.T.O.H. H4R7N Hack v1.3                            [Updated 27.07.2022]","Midnight")
  
     -- MAIN
     local Main = Window:NewTab("Main")
@@ -45,7 +45,7 @@ else
 end
     end)
 
-    MainSection:NewButton("Freeze Me [Updated for Ring 6]", "No one will know that you are Cheating.", function()
+    MainSection:NewButton("Freeze Me", "No one will know that you are Cheating.", function()
     if game.PlaceId == 9070981164 then
         while wait() do
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Start.CFrame + Vector3.new(0, 3, 0)
@@ -638,11 +638,17 @@ end
 
     local ftSection = ft:NewSection("")
 
-    ftSection:NewButton("Play loud audio", "Disturb the players on the server with loud audio.", function()
+    ftSection:NewButton("Play loud audio [PATCHED]", "Disturb the players on the server with loud audio.", function()
     	for i,v in pairs(workspace:GetDescendants()) do
     	if v:IsA("Sound") then
         	v:Play()
     	end
+	end
+    end)
+
+    ftSection:NewButton("Crash the Server", "Disturb the players on the server with loud audio.", function()
+    	for i = 1,3000 do
+  	    game.ReplicatedStorage.CosmeticEquip:FireServer("Personal Softlock", "Aura")
 	end
     end)
 end
